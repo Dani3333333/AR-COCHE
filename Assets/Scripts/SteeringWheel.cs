@@ -3,14 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class SteeringWheel : MonoBehaviour, IDragHandler
+public class SteeringWheel : MonoBehaviour, IDragHandler, IEndDragHandler
 {
     public CarController car;
+    private float steerValue;
 
     public void OnDrag(PointerEventData eventData)
     {
-        float turn = Mathf.Clamp(eventData.delta.x / 100f, -1f, 1f);
-        car.SetSteering(turn);
+        steerValue = eventData.delta.x / 100f;
+        car.SetSteering(steerValue);
+    }
+
+    public void OnEndDrag(PointerEventData eventData)
+    {
+        steerValue = 0f;
+        car.SetSteering(0f);
     }
 }
 

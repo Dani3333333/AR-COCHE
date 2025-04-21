@@ -265,7 +265,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6620635207213750028}
   - component: {fileID: 8759362674038313697}
-  - component: {fileID: 3938576849106796776}
   - component: {fileID: 6814810876718795467}
   m_Layer: 5
   m_Name: Volante
@@ -301,36 +300,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3661229120815876321}
   m_CullTransparentMesh: 1
---- !u!114 &3938576849106796776
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3661229120815876321}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4e1db614f7732924e9a8c92ffd8fa64c, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
 --- !u!114 &6814810876718795467
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -344,6 +313,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   car: {fileID: 0}
+  isActive: 0
 --- !u!1 &3797084629615036151
 GameObject:
   m_ObjectHideFlags: 0
@@ -813,9 +783,9 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  roadStartPoint: {fileID: 0}
-  numberOfSections: 20
-  sectionSpacing: 1.5
+  carTransform: {fileID: 0}
+  spawnInterval: 0.5
+  spawnDistance: 30
   laneOffset: 1.5
 --- !u!1 &8066081220660236180
 GameObject:

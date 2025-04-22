@@ -37,3 +37,7 @@ Té un codi que activa el game over, quan el cotxe toca els objectes mencionats 
 | **Armand Puertos** | Direcció artística, narrativa i ambientació |
 | **Pablo Torres** | Disseny de mecàniques, i presentació |
 | **Oscar Garcia** | Disseny de mecàniques, memòria i presentació |
+
+
+
+Per acabar, com t'he dit a classe, i després de molts intents amb diferents ordinadors, no hem pogut fer la build del joc, espero que amb el Unity et puguis fer una idea del que hem volgut trasmetre. Gràcies

@@ -17,6 +17,7 @@ Com funciona cada element?
 **Cotxe:**
 El cotxe té un CarController controla la velocitat amb la que correr endavant i amb la que gira.
 També conté un CarCollisionHandler que actua quan el cotxe toca algun objecte amb el Tag "Obstacle" o "OutofBounds", i fa apareixer el panell de "GAME OVER".
+També hi ha un contador de distància per donar més joc a la cursa, i poder crear competiions entre els amics.
 
 **Cosetxadora:**
 Conté un codi sencill anomenat "Harvester" que té la funcinalitat de correr endavant amb una velocitat asignada (menor a la del cotxe) i a la vegada tenir un objectiu per perseguir que és el Rayo McQueen.

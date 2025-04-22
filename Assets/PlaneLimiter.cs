@@ -13,7 +13,6 @@ public class PlaneLimiter : MonoBehaviour
 
         if (Mathf.Abs(localPos.x) > planeSize.x / 2 || Mathf.Abs(localPos.z) > planeSize.y / 2)
         {
-            // Opcional: frena o rebota
             transform.position -= transform.forward * Time.deltaTime;
         }
     }

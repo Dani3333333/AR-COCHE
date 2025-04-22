@@ -11,5 +11,7 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 1f; // Per si has pausat el temps
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        carController.ResetDistance();
+
     }
 }

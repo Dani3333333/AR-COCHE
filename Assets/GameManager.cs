@@ -5,9 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    public GameObject gameOverPanel;
+
     public void RestartGame()
     {
+        Time.timeScale = 1f; // Per si has pausat el temps
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
-

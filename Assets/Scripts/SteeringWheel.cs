@@ -10,7 +10,7 @@ public class SteeringWheel : MonoBehaviour, IDragHandler, IEndDragHandler
     public bool isActive = false; // <-- control si s’ha començat el joc
     public GameObject wheelGraphic;
 
-s
+
     public void OnDrag(PointerEventData eventData)
     {
         if (!isActive) return;

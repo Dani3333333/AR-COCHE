@@ -13,6 +13,7 @@ Funcionament del joc:
 
 
 Com funciona cada element?
+
 **Cotxe:**
 El cotxe té un CarController controla la velocitat amb la que correr endavant i amb la que gira.
 També conté un CarCollisionHandler que actua quan el cotxe toca algun objecte amb el Tag "Obstacle" o "OutofBounds", i fa apareixer el panell de "GAME OVER".
